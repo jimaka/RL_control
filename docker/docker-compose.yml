@@ -1,0 +1,83 @@
+# =============================================================================
+#  RL-Actor + MPC-Shield  ::  docker-compose
+#  Usage :
+#     docker compose -f docker/docker-compose.yml build
+#     docker compose -f docker/docker-compose.yml run --rm trainer
+#     docker compose -f docker/docker-compose.yml run --rm shield_node
+# =============================================================================
+version: "3.8"
+
+# Common chunk re-used by every service (DRY via YAML anchors)
+x-ship-common: &ship-common
+  image: ship_rl_shield:latest
+  build:
+    context: ..
+    dockerfile: docker/Dockerfile
+  ipc: host
+  network_mode: host
+  stdin_open: true
+  tty: true
+  environment:
+    - DISPLAY=${DISPLAY:-:0}
+    - QT_X11_NO_MITSHM=1
+    - PYTHONUNBUFFERED=1
+    - ROS_MASTER_URI=http://localhost:11311
+    - ROS_HOSTNAME=localhost
+    - NVIDIA_VISIBLE_DEVICES=all
+    - NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+  volumes:
+    # Source tree (ROS package + python scripts) ---------------------------------
+    - ../src:/ws/src
+    # Datasets (read-only mount of the local .npz directory) --------------------
+    - ../data:/ws/data:ro
+    # Persistent outputs : trained models + JSONL logs + tb runs ---------------
+    - ../models:/ws/models
+    - ../logs:/ws/logs
+    # X11 for plotting (optional) ----------------------------------------------
+    - /tmp/.X11-unix:/tmp/.X11-unix:rw
+
+services:
+
+  # ---------------------------------------------------------------------------
+  # Python : PPO + Optuna training loop  (GPU)
+  # ---------------------------------------------------------------------------
+  trainer:
+    <<: *ship-common
+    container_name: ship_rl_trainer
+    working_dir: /ws/src/ship_control/scripts
+    command: >
+      bash -lc "python3 train_rl_optuna.py
+                --data /ws/data/koopman_train_merged.npz
+                --val  /ws/data/koopman_val.npz
+                --n-trials 40
+                --out /ws/models"
+
+  # ---------------------------------------------------------------------------
+  # C++ : ROS shield node (loads rl_policy_best.onnx + OSQP MPC-Shield)
+  # ---------------------------------------------------------------------------
+  shield_node:
+    <<: *ship-common
+    container_name: ship_rl_shield_node
+    working_dir: /ws
+    command: >
+      bash -lc "source /opt/ros/noetic/setup.bash &&
+                catkin build ship_control --no-status &&
+                source devel/setup.bash &&
+                roslaunch ship_control motion_rl_shield.launch
+                policy_path:=/ws/models/rl_policy_best.onnx"
+
+  # ---------------------------------------------------------------------------
+  # Interactive shell  (useful for debugging / Optuna dashboard / jupyter)
+  # ---------------------------------------------------------------------------
+  shell:
+    <<: *ship-common
+    container_name: ship_rl_shell
+    working_dir: /ws
+    command: bash
