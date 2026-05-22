@@ -1,1 +1,7 @@
 __pycache__/
+
+# Optuna intermediate per-trial PPO checkpoints + TensorBoard runs
+# (best policy is exported to models/rl_policy_best.onnx and JSONL log)
+models/trial_*.zip
+models/tb/
+

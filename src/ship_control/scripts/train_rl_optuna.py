@@ -219,6 +219,30 @@ def export_actor_to_onnx(model: PPO, out_path: Path) -> None:
         opset_version=17,
         do_constant_folding=True,
     )
+
+    # 在新的 torch.onnx dynamo 导出路径上，权重默认会被外部化到一个并行
+    # 的 `.onnx.data` 文件，这会让 C++ 部署侧（只读单一 .onnx）失败。
+    # 这里强制把权重重新打包回 ONNX 内部，并清理临时 sidecar。
+    try:
+        import onnx  # noqa: WPS433  (local import 仅在导出阶段需要)
+        from onnx.external_data_helper import load_external_data_for_model
+        m = onnx.load(str(out_path), load_external_data=False)
+        has_external = any(
+            init.data_location == onnx.TensorProto.EXTERNAL
+            for init in m.graph.initializer
+        )
+        if has_external:
+            load_external_data_for_model(m, str(out_path.parent))
+            for init in m.graph.initializer:
+                init.ClearField("data_location")
+                init.ClearField("external_data")
+            onnx.save(m, str(out_path))
+            sidecar = out_path.with_suffix(out_path.suffix + ".data")
+            if sidecar.exists():
+                sidecar.unlink()
+    except Exception as exc:  # 不让重打包失败阻断训练总流程
+        print(f"[onnx] WARN 重打包外部权重失败: {exc}")
+
     print(f"[onnx] 导出策略到  {out_path}  ({out_path.stat().st_size/1024:.1f} KiB)")
 
 
