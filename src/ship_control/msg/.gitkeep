@@ -1,1 +1,0 @@
-# ShieldIntervention.msg (Header header; float32 e_shield; float32[4] u_rl; float32[4] u_safe; bool active)

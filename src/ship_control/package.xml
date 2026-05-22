@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ship_control</name>
+  <version>0.4.0</version>
+  <description>
+    RL-Actor + MPC-Shield 混合控制 ROS 节点：
+    ONNX Runtime 加载 PPO 策略，OSQP 凸优化护盾对 4 维控制施加硬约束，
+    通过 /control/shield_intervention 话题广播干预残差用于实时可观测。
+  </description>
+
+  <maintainer email="rl-shield@example.com">RL-Shield Team</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>elane_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>eigen</build_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>elane_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>tf</exec_depend>
+
+</package>

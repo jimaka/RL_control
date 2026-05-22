@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+  RL-Actor + MPC-Shield 节点启动文件
+
+  典型用法：
+    roslaunch ship_control motion_rl_shield.launch \
+        policy_path:=/ws/models/rl_policy_best.onnx
+-->
+<launch>
+
+  <arg name="policy_path"   default="$(find ship_control)/../../models/rl_policy_best.onnx"
+       doc="ONNX 策略文件路径（来自 train_rl_optuna.py 导出）" />
+  <arg name="config_file"   default="$(find ship_control)/config/shield_bounds.yaml"
+       doc="护盾硬约束 + 物理边界 YAML" />
+  <arg name="use_cuda"      default="true"
+       doc="是否启用 ONNX Runtime CUDAExecutionProvider" />
+  <arg name="rate_hz"       default="10.0"
+       doc="控制环频率（需与 shield_bounds.yaml::control_dt 对齐）" />
+  <arg name="topic_state"   default="/ship/state13"
+       doc="13 维系统状态订阅话题（float32[13]）" />
+  <arg name="topic_cmd"     default="/control/cmd"
+       doc="物理量纲控制指令发布话题" />
+
+  <node pkg="ship_control"
+        type="motion_rl_shield_node"
+        name="motion_rl_shield_node"
+        output="screen"
+        respawn="false">
+    <param name="policy_path"  value="$(arg policy_path)" />
+    <param name="config_file"  value="$(arg config_file)" />
+    <param name="use_cuda"     value="$(arg use_cuda)" />
+    <param name="rate_hz"      value="$(arg rate_hz)" />
+    <param name="topic_state"  value="$(arg topic_state)" />
+    <param name="topic_cmd"    value="$(arg topic_cmd)" />
+  </node>
+
+</launch>

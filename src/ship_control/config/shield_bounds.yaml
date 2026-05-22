@@ -1,0 +1,44 @@
+# =============================================================================
+# RL-Actor + MPC-Shield  ::  护盾硬约束 + 推力/舵物理边界
+#
+#   * 量纲与 Python 训练侧严格保持一致：
+#       u_phys = u_norm * action_scale     (训练侧 ACTION_SCALE)
+#       u_norm ∈ [-1, +1]
+#
+#   * 与 motion.cpp 的阻力曲线一致：
+#       推力幅值 = 60 kN（force_tnn_=1310 ~ 节流到力的近似上限的等比缩放）
+#
+#   * dt 与训练侧 EnvConfig.dt 必须一致（10 Hz 控制周期）
+# =============================================================================
+
+control_dt: 0.10        # 控制 / 推理 / QP 周期 [s]
+
+# ---------- 物理量纲反归一化 (与训练侧 ACTION_SCALE 一致) ----------
+action_scale:
+  - 60000.0             # thrust_left   [N]
+  - 1.5707963267948966  # rudder_left   [rad]   ≈ 90°
+  - 60000.0             # thrust_right  [N]
+  - 1.5707963267948966  # rudder_right  [rad]   ≈ 90°
+
+# ---------- 硬不等式约束 (归一化坐标系 [-1, 1]) ----------
+abs_bounds:
+  - [-1.0, 1.0]         # thrust_left
+  - [-1.0, 1.0]         # rudder_left
+  - [-1.0, 1.0]         # thrust_right
+  - [-1.0, 1.0]         # rudder_right
+
+# 转舵速率上限 [rad/s] ；推力速率上限 [N/s]
+rate_limits:
+  rudder_rate_max_rad_s: 0.2617993878    # 15 deg/s
+  thrust_rate_max_n_s:   80000.0         # 60 kN / 0.75s
+
+# ---------- QP 目标函数权重 ----------
+qp_weights:
+  w_dev:    1.0          # ||U_safe - U_rl||² 项权重
+  w_smooth: 0.5          # ||ΔU_safe||²    项权重（与上一拍差）
+
+# ---------- 干预报警 ----------
+shield:
+  trigger_eps: 1.0e-3    # E_shield > eps  即视为护盾生效
+  warn_rate:   0.30      # 滚动窗口内干预率 > 30% 即在 ROS_WARN 打印告警
+  warn_window: 100       # 滚动窗口大小（拍）
