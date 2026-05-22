@@ -1,0 +1,241 @@
+[init] device=cpu  n_trials=30  timesteps/trial=80000
+[32m[I 2026-05-22 13:30:45,269][0m A new study created in memory with name: ship_rl_ppo[0m
+[trial 000] fitness= -0.337  xte=10.39m  yaw=8.90°  smooth=15.89  shield=29.09%  (33.3s)
+[32m[I 2026-05-22 13:31:18,559][0m Trial 0 finished with value: -0.3370184915367558 and parameters: {'w_xte': 1.184431975182039, 'w_heading': 8.927180304353628, 'w_speed': 0.4480392682684061, 'w_smooth': 1.0401663679887312, 'w_rate': 0.18410729205738682, 'w_shield_hint': 0.15599452033620265, 'hydro_sigma': 0.023485016730091967, 'obs_noise_pos': 0.8795585311974417, 'lr': 0.00010502105436744271, 'n_steps': 2048, 'batch_size': 64, 'gamma': 0.9589868209828182, 'gae_lambda': 0.9273818018663584, 'clip_range': 0.20495128632644755, 'ent_coef': 5.34293726127978e-05, 'vf_coef': 0.5038603981386294, 'max_grad_norm': 0.7282970263056656, 'n_epochs': 4}. Best is trial 0 with value: -0.3370184915367558.[0m
+[trial 001] fitness=+62.907  xte=10.56m  yaw=9.97°  smooth=3.94  shield=8.09%  (44.4s)
+[32m[I 2026-05-22 13:32:03,180][0m Trial 1 finished with value: 62.90650155397083 and parameters: {'w_xte': 0.979748602933958, 'w_heading': 2.324672848950434, 'w_speed': 0.19603369861210684, 'w_smooth': 2.157696745589682, 'w_rate': 0.21839352923182975, 'w_shield_hint': 0.5142344384136116, 'hydro_sigma': 0.055544874131722544, 'obs_noise_pos': 0.14180537144799796, 'lr': 0.00010769622478263136, 'n_steps': 2048, 'batch_size': 64, 'gamma': 0.9547859335863128, 'gae_lambda': 0.9615809723860941, 'clip_range': 0.18803049874792027, 'ent_coef': 3.0771802712506896e-06, 'vf_coef': 0.6466238370778892, 'max_grad_norm': 0.32407196478065287, 'n_epochs': 10}. Best is trial 1 with value: 62.90650155397083.[0m
+[trial 002] fitness=+31.261  xte=11.05m  yaw=8.94°  smooth=10.56  shield=1.08%  (32.5s)
+[32m[I 2026-05-22 13:32:35,846][0m Trial 2 finished with value: 31.261055976025077 and parameters: {'w_xte': 0.9072980676745123, 'w_heading': 4.597505784732165, 'w_speed': 0.12720830454691837, 'w_smooth': 0.7648565112369946, 'w_rate': 0.8488762161408708, 'w_shield_hint': 0.18485445552552704, 'hydro_sigma': 0.07817507766587352, 'obs_noise_pos': 0.7976195410250031, 'lr': 0.0003946212980759095, 'n_steps': 2048, 'batch_size': 128, 'gamma': 0.9659411862073999, 'gae_lambda': 0.9349809560720534, 'clip_range': 0.1542698063547792, 'ent_coef': 0.0020651425578959264, 'vf_coef': 0.5497273286855124, 'max_grad_norm': 0.49665415678116653, 'n_epochs': 7}. Best is trial 1 with value: 62.90650155397083.[0m
+[trial 003] fitness=+45.311  xte=10.92m  yaw=9.47°  smooth=7.01  shield=18.82%  (27.1s)
+[32m[I 2026-05-22 13:33:03,090][0m Trial 3 finished with value: 45.310602955384745 and parameters: {'w_xte': 0.691662498760998, 'w_heading': 6.341572775495278, 'w_speed': 0.06251188975400557, 'w_smooth': 4.749974771378394, 'w_rate': 2.0512599422151356, 'w_shield_hint': 0.1987156815341724, 'hydro_sigma': 0.020331327027416145, 'obs_noise_pos': 0.8339152856093507, 'lr': 0.00015882886211970035, 'n_steps': 1024, 'batch_size': 256, 'gamma': 0.9805416082145503, 'gae_lambda': 0.9297808222367384, 'clip_range': 0.11271167005720473, 'ent_coef': 1.753594952976443e-05, 'vf_coef': 0.5276283254187228, 'max_grad_norm': 0.8107243248366449, 'n_epochs': 8}. Best is trial 1 with value: 62.90650155397083.[0m
+[trial 004] fitness=+76.164  xte=11.17m  yaw=9.57°  smooth=1.53  shield=0.00%  (26.3s)
+[32m[I 2026-05-22 13:33:29,577][0m Trial 4 finished with value: 76.16370705049353 and parameters: {'w_xte': 3.856405973578173, 'w_heading': 2.9662989987000667, 'w_speed': 0.07154276249073921, 'w_smooth': 1.6284765129487637, 'w_rate': 1.9613313824155447, 'w_shield_hint': 0.5612771975694962, 'hydro_sigma': 0.06625803079727366, 'obs_noise_pos': 0.5444160367279517, 'lr': 7.728716861851788e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9749199638670704, 'gae_lambda': 0.9816809826533484, 'clip_range': 0.14985844582977498, 'ent_coef': 4.3805807679056575e-05, 'vf_coef': 0.828885796980134, 'max_grad_norm': 0.4601587158441357, 'n_epochs': 3}. Best is trial 4 with value: 76.16370705049353.[0m
+[trial 005] fitness=+40.023  xte=10.47m  yaw=9.76°  smooth=8.58  shield=7.39%  (30.7s)
+[32m[I 2026-05-22 13:34:00,491][0m Trial 5 finished with value: 40.02277012972649 and parameters: {'w_xte': 0.9743645106784236, 'w_heading': 1.449510238325468, 'w_speed': 0.8100923610860494, 'w_smooth': 2.360327600127808, 'w_rate': 1.1916095713775827, 'w_shield_hint': 0.8714605901877177, 'hydro_sigma': 0.06822032461394686, 'obs_noise_pos': 0.2679130529974323, 'lr': 0.00032842103509117315, 'n_steps': 2048, 'batch_size': 64, 'gamma': 0.9709282816426865, 'gae_lambda': 0.9736213289330243, 'clip_range': 0.27214611665126864, 'ent_coef': 1.0661259689433902e-06, 'vf_coef': 0.6575231118042959, 'max_grad_norm': 0.5921877022041453, 'n_epochs': 4}. Best is trial 4 with value: 76.16370705049353.[0m
+[trial 006] fitness=-20.558  xte=10.24m  yaw=11.43°  smooth=19.36  shield=37.79%  (25.9s)
+[32m[I 2026-05-22 13:34:26,571][0m Trial 6 finished with value: -20.55820733291778 and parameters: {'w_xte': 0.6589240690624595, 'w_heading': 2.175780957128771, 'w_speed': 0.8427986132210084, 'w_smooth': 0.35408871584750534, 'w_rate': 0.7610438922351126, 'w_shield_hint': 0.7030189588951778, 'hydro_sigma': 0.04181777614275764, 'obs_noise_pos': 0.9746038744488646, 'lr': 0.00043168711384296114, 'n_steps': 1024, 'batch_size': 256, 'gamma': 0.9746312721382142, 'gae_lambda': 0.904633087612499, 'clip_range': 0.1557292928473223, 'ent_coef': 0.004295992790539129, 'vf_coef': 0.46769332346688064, 'max_grad_norm': 0.40142641046385613, 'n_epochs': 6}. Best is trial 4 with value: 76.16370705049353.[0m
+[trial 007] fitness=+54.460  xte=11.66m  yaw=9.90°  smooth=5.71  shield=0.65%  (30.2s)
+[32m[I 2026-05-22 13:34:56,926][0m Trial 7 finished with value: 54.45979515154456 and parameters: {'w_xte': 4.837494212525056, 'w_heading': 1.7460443532333498, 'w_speed': 0.3744885232629177, 'w_smooth': 1.9677452882613435, 'w_rate': 0.25336058850767756, 'w_shield_hint': 0.7282163486118596, 'hydro_sigma': 0.042066987963155195, 'obs_noise_pos': 0.6690752475342215, 'lr': 0.00011921968649009675, 'n_steps': 2048, 'batch_size': 64, 'gamma': 0.9789537542162239, 'gae_lambda': 0.9609807925658054, 'clip_range': 0.10331756578557123, 'ent_coef': 0.0001117820920069873, 'vf_coef': 0.45854704263855656, 'max_grad_norm': 0.7516209532866149, 'n_epochs': 4}. Best is trial 4 with value: 76.16370705049353.[0m
+[trial 008] fitness=+43.184  xte=11.58m  yaw=10.09°  smooth=7.98  shield=0.39%  (42.6s)
+[32m[I 2026-05-22 13:35:39,673][0m Trial 8 finished with value: 43.18440849356086 and parameters: {'w_xte': 2.4541875150782975, 'w_heading': 2.4363256990834956, 'w_speed': 0.8273396104974736, 'w_smooth': 0.1712552756212754, 'w_rate': 0.3797182755664948, 'w_shield_hint': 0.11347352124058907, 'hydro_sigma': 0.07548161709671376, 'obs_noise_pos': 0.889605418042883, 'lr': 2.7430586177787164e-05, 'n_steps': 1024, 'batch_size': 64, 'gamma': 0.993963572139713, 'gae_lambda': 0.9810376251446997, 'clip_range': 0.2266202914546536, 'ent_coef': 2.270487755790923e-05, 'vf_coef': 0.5444467022288626, 'max_grad_norm': 0.8081689752091674, 'n_epochs': 10}. Best is trial 4 with value: 76.16370705049353.[0m
+[trial 009] fitness=+78.941  xte=11.58m  yaw=10.03°  smooth=0.83  shield=0.33%  (34.9s)
+[32m[I 2026-05-22 13:36:14,704][0m Trial 9 finished with value: 78.94134896058709 and parameters: {'w_xte': 3.855284467610652, 'w_heading': 6.023869375703683, 'w_speed': 0.34219403447852564, 'w_smooth': 0.13897967017840054, 'w_rate': 0.1881925110523379, 'w_shield_hint': 0.8985541885270792, 'hydro_sigma': 0.05638574357957539, 'obs_noise_pos': 0.10827734645496669, 'lr': 1.4872949647124185e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9609891961635674, 'gae_lambda': 0.9640961299212782, 'clip_range': 0.14744981749936, 'ent_coef': 2.0026211229345322e-05, 'vf_coef': 0.8225439835826169, 'max_grad_norm': 0.7547430293330502, 'n_epochs': 9}. Best is trial 9 with value: 78.94134896058709.[0m
+[trial 010] fitness=+67.538  xte=11.15m  yaw=9.45°  smooth=3.21  shield=1.52%  (34.7s)
+[32m[I 2026-05-22 13:36:49,570][0m Trial 10 finished with value: 67.53834602448497 and parameters: {'w_xte': 2.2733201303454313, 'w_heading': 1.0139048090380873, 'w_speed': 0.30316967990625043, 'w_smooth': 0.10727948694969772, 'w_rate': 0.10624441154775001, 'w_shield_hint': 0.9076647952825176, 'hydro_sigma': 0.053131727080111324, 'obs_noise_pos': 0.39282399817415636, 'lr': 1.1449734458140495e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.950546113562087, 'gae_lambda': 0.9491265516082913, 'clip_range': 0.2827763764253396, 'ent_coef': 0.0005016778116986427, 'vf_coef': 0.9548933132569972, 'max_grad_norm': 0.9885055351530107, 'n_epochs': 8}. Best is trial 9 with value: 78.94134896058709.[0m
+[trial 011] fitness=+82.184  xte=11.26m  yaw=9.48°  smooth=0.32  shield=0.00%  (26.7s)
+[32m[I 2026-05-22 13:37:16,406][0m Trial 11 finished with value: 82.18353337950407 and parameters: {'w_xte': 4.333148258830645, 'w_heading': 4.2426199460913265, 'w_speed': 0.0638958968710066, 'w_smooth': 0.35210547906756223, 'w_rate': 4.38873134802045, 'w_shield_hint': 0.49604131216971425, 'hydro_sigma': 0.06218870023905871, 'obs_noise_pos': 0.4909545790294585, 'lr': 3.930323847146181e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9642016732146812, 'gae_lambda': 0.9899426194777396, 'clip_range': 0.14271726731629011, 'ent_coef': 7.919413614819866e-06, 'vf_coef': 0.874888941289321, 'max_grad_norm': 0.5806691787774307, 'n_epochs': 3}. Best is trial 11 with value: 82.18353337950407.[0m
+[trial 012] fitness=+74.328  xte=11.49m  yaw=9.82°  smooth=1.80  shield=0.27%  (32.7s)
+[32m[I 2026-05-22 13:37:49,169][0m Trial 12 finished with value: 74.32824580868352 and parameters: {'w_xte': 3.054909130624181, 'w_heading': 4.529547858032616, 'w_speed': 0.17270527792441248, 'w_smooth': 0.3117558789170898, 'w_rate': 4.980732382259942, 'w_shield_hint': 0.36838378828882734, 'hydro_sigma': 0.06146565734599234, 'obs_noise_pos': 0.44647111281014784, 'lr': 3.0602205443315364e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.963135571550078, 'gae_lambda': 0.9660722295834562, 'clip_range': 0.13240129067149803, 'ent_coef': 4.976104190967579e-06, 'vf_coef': 0.8525524247316635, 'max_grad_norm': 0.6742130604118002, 'n_epochs': 9}. Best is trial 11 with value: 82.18353337950407.[0m
+[trial 013] fitness=+80.129  xte=11.30m  yaw=9.57°  smooth=0.71  shield=0.14%  (29.5s)
+[32m[I 2026-05-22 13:38:18,858][0m Trial 13 finished with value: 80.12922847688367 and parameters: {'w_xte': 4.76832447774339, 'w_heading': 4.359819065996037, 'w_speed': 0.10562440209560889, 'w_smooth': 0.3623029543985116, 'w_rate': 0.45977314759829785, 'w_shield_hint': 0.36006510442126416, 'hydro_sigma': 0.04466430303201623, 'obs_noise_pos': 0.12449712375207711, 'lr': 2.884296011895419e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9648322611215372, 'gae_lambda': 0.9854374452602473, 'clip_range': 0.18243773941496408, 'ent_coef': 7.282377360225137e-06, 'vf_coef': 0.7951471308121265, 'max_grad_norm': 0.9209378847972243, 'n_epochs': 6}. Best is trial 11 with value: 82.18353337950407.[0m
+[trial 014] fitness=+82.554  xte=11.20m  yaw=9.50°  smooth=0.25  shield=0.00%  (29.4s)
+[32m[I 2026-05-22 13:38:48,406][0m Trial 14 finished with value: 82.55394493129322 and parameters: {'w_xte': 1.7979698379656202, 'w_heading': 3.9730782830686606, 'w_speed': 0.10191096528085174, 'w_smooth': 0.3676348772909529, 'w_rate': 4.23839279887594, 'w_shield_hint': 0.3491039673292998, 'hydro_sigma': 0.04338948772772887, 'obs_noise_pos': 0.2864986130073556, 'lr': 3.866644266806584e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9900102281325163, 'gae_lambda': 0.989214947652924, 'clip_range': 0.18499359627663342, 'ent_coef': 4.400132617786331e-06, 'vf_coef': 0.9847027602726783, 'max_grad_norm': 0.9990374177728288, 'n_epochs': 6}. Best is trial 14 with value: 82.55394493129322.[0m
+[trial 015] fitness=+82.716  xte=11.17m  yaw=9.53°  smooth=0.22  shield=0.00%  (27.5s)
+[32m[I 2026-05-22 13:39:16,080][0m Trial 15 finished with value: 82.7155136042661 and parameters: {'w_xte': 1.8757242606710938, 'w_heading': 3.5926161422749336, 'w_speed': 0.09805735135150942, 'w_smooth': 0.23114017790053898, 'w_rate': 4.964477902723519, 'w_shield_hint': 0.35072145495747864, 'hydro_sigma': 0.030596235800291388, 'obs_noise_pos': 0.31716316294732083, 'lr': 4.437941647306535e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9929741810498209, 'gae_lambda': 0.9886447982112292, 'clip_range': 0.24005756664995892, 'ent_coef': 1.2359226135380003e-06, 'vf_coef': 0.9874026111787179, 'max_grad_norm': 0.5833848434539777, 'n_epochs': 5}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 016] fitness=+71.272  xte=11.16m  yaw=9.87°  smooth=2.43  shield=1.35%  (27.5s)
+[32m[I 2026-05-22 13:39:43,745][0m Trial 16 finished with value: 71.27241529090081 and parameters: {'w_xte': 1.638271287801984, 'w_heading': 3.394781929739197, 'w_speed': 0.10070838890717515, 'w_smooth': 0.19296485472680996, 'w_rate': 2.682897878729193, 'w_shield_hint': 0.32334076412440405, 'hydro_sigma': 0.03226158377593398, 'obs_noise_pos': 0.2921159221954151, 'lr': 5.9736570740790944e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.998726377742927, 'gae_lambda': 0.950207905898575, 'clip_range': 0.24570649177295192, 'ent_coef': 1.493643082417814e-06, 'vf_coef': 0.9949900798969441, 'max_grad_norm': 0.8703790683541198, 'n_epochs': 5}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 017] fitness=+69.357  xte=11.70m  yaw=9.94°  smooth=2.61  shield=3.33%  (26.0s)
+[32m[I 2026-05-22 13:40:09,912][0m Trial 17 finished with value: 69.3567847606125 and parameters: {'w_xte': 1.6373490049520703, 'w_heading': 9.98650431716796, 'w_speed': 0.1434225787840892, 'w_smooth': 0.48926529072373603, 'w_rate': 3.150543348307977, 'w_shield_hint': 0.03162165534769201, 'hydro_sigma': 0.03349890283134535, 'obs_noise_pos': 0.3179664717606451, 'lr': 4.95063023303811e-05, 'n_steps': 512, 'batch_size': 256, 'gamma': 0.9889906642769043, 'gae_lambda': 0.9084991279959823, 'clip_range': 0.24847794256343103, 'ent_coef': 0.0002022925765259747, 'vf_coef': 0.3097282907253118, 'max_grad_norm': 0.5936915695405041, 'n_epochs': 5}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 018] fitness=+81.209  xte=11.12m  yaw=9.71°  smooth=0.52  shield=0.00%  (30.9s)
+[32m[I 2026-05-22 13:40:41,013][0m Trial 18 finished with value: 81.20917620553688 and parameters: {'w_xte': 2.2652837615330057, 'w_heading': 6.66041862700852, 'w_speed': 0.08327111469356885, 'w_smooth': 0.22136700198304585, 'w_rate': 1.3493100125080755, 'w_shield_hint': 0.3225015857490618, 'hydro_sigma': 0.03322819894048487, 'obs_noise_pos': 0.23300553252490475, 'lr': 2.0355514965129347e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9857646852355044, 'gae_lambda': 0.9749535839757695, 'clip_range': 0.20826796123880606, 'ent_coef': 2.676526238920694e-06, 'vf_coef': 0.9151548420126239, 'max_grad_norm': 0.9890214019911974, 'n_epochs': 7}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 019] fitness=+61.942  xte=10.96m  yaw=9.41°  smooth=4.36  shield=1.73%  (28.0s)
+[32m[I 2026-05-22 13:41:09,144][0m Trial 19 finished with value: 61.94173342029024 and parameters: {'w_xte': 1.4068988504954365, 'w_heading': 3.1649573798038606, 'w_speed': 0.05028422284598105, 'w_smooth': 0.6763411683088452, 'w_rate': 3.39479744208347, 'w_shield_hint': 0.45139839256521064, 'hydro_sigma': 0.04739047436863669, 'obs_noise_pos': 0.665388573778303, 'lr': 0.0001936022317932074, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9898731789330375, 'gae_lambda': 0.9738166171264878, 'clip_range': 0.2969077147341509, 'ent_coef': 1.0094381760194377e-06, 'vf_coef': 0.7403447248528647, 'max_grad_norm': 0.502495881668968, 'n_epochs': 5}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 020] fitness=+81.078  xte=11.16m  yaw=9.60°  smooth=0.55  shield=0.00%  (26.1s)
+[32m[I 2026-05-22 13:41:35,396][0m Trial 20 finished with value: 81.07794170790572 and parameters: {'w_xte': 1.9171703668604039, 'w_heading': 3.5089560612498207, 'w_speed': 0.25885361536302226, 'w_smooth': 0.2620521382359861, 'w_rate': 1.4782357558813262, 'w_shield_hint': 0.6413642495083502, 'hydro_sigma': 0.027386560505124054, 'obs_noise_pos': 0.3810572927075435, 'lr': 1.7190792868799054e-05, 'n_steps': 1024, 'batch_size': 256, 'gamma': 0.9977137652908346, 'gae_lambda': 0.9186592813356025, 'clip_range': 0.232415901520923, 'ent_coef': 0.00046902683319936437, 'vf_coef': 0.9989476812845943, 'max_grad_norm': 0.6589669679080008, 'n_epochs': 6}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 021] fitness=+81.769  xte=11.19m  yaw=9.53°  smooth=0.41  shield=0.00%  (25.4s)
+[32m[I 2026-05-22 13:42:00,857][0m Trial 21 finished with value: 81.76928493890333 and parameters: {'w_xte': 2.8668878533202586, 'w_heading': 5.215665724331293, 'w_speed': 0.05099987172837789, 'w_smooth': 0.53615557377985, 'w_rate': 4.813843157314979, 'w_shield_hint': 0.44573992027222065, 'hydro_sigma': 0.035161738331028106, 'obs_noise_pos': 0.4594372746263518, 'lr': 4.339645495547092e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9827833134226832, 'gae_lambda': 0.9875199106851332, 'clip_range': 0.17407933790103577, 'ent_coef': 6.90192061724764e-06, 'vf_coef': 0.90650141447338, 'max_grad_norm': 0.5954022609070729, 'n_epochs': 3}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 022] fitness=+81.315  xte=11.26m  yaw=9.56°  smooth=0.48  shield=0.00%  (25.8s)
+[32m[I 2026-05-22 13:42:26,821][0m Trial 22 finished with value: 81.31535544102984 and parameters: {'w_xte': 1.3515560347862818, 'w_heading': 3.947312556276539, 'w_speed': 0.09084213821602058, 'w_smooth': 0.44693062028455405, 'w_rate': 4.0129808467864745, 'w_shield_hint': 0.242712352847143, 'hydro_sigma': 0.04976550261223579, 'obs_noise_pos': 0.5435340868374183, 'lr': 3.388972634154272e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.99103730078239, 'gae_lambda': 0.9885857398084696, 'clip_range': 0.22086743967426936, 'ent_coef': 8.827585005377286e-06, 'vf_coef': 0.9061665996415277, 'max_grad_norm': 0.534650407078109, 'n_epochs': 3}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 023] fitness=+79.786  xte=11.18m  yaw=9.64°  smooth=0.78  shield=0.36%  (28.2s)
+[32m[I 2026-05-22 13:42:55,162][0m Trial 23 finished with value: 79.78572320738469 and parameters: {'w_xte': 1.9210195490489574, 'w_heading': 7.6842733478746945, 'w_speed': 0.12444457142086403, 'w_smooth': 0.2564406918991826, 'w_rate': 2.3856326398727457, 'w_shield_hint': 0.5933768744558983, 'hydro_sigma': 0.03900385372356301, 'obs_noise_pos': 0.2024067999774268, 'lr': 7.539604582501943e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9685339763248526, 'gae_lambda': 0.9893817457026519, 'clip_range': 0.12568688500455227, 'ent_coef': 2.702137524058791e-06, 'vf_coef': 0.710054867241433, 'max_grad_norm': 0.41520531280410433, 'n_epochs': 5}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 024] fitness=+80.725  xte=11.20m  yaw=9.51°  smooth=0.62  shield=0.00%  (27.7s)
+[32m[I 2026-05-22 13:43:22,975][0m Trial 24 finished with value: 80.72481607610358 and parameters: {'w_xte': 3.3450645665263, 'w_heading': 3.0432714707267596, 'w_speed': 0.0701774246532015, 'w_smooth': 0.1443936859542597, 'w_rate': 3.467461667729073, 'w_shield_hint': 0.4307118383824208, 'hydro_sigma': 0.06011882028167027, 'obs_noise_pos': 0.35430672535332813, 'lr': 4.4299217555928985e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.985014040833824, 'gae_lambda': 0.9772217455627373, 'clip_range': 0.16747548164047313, 'ent_coef': 1.3122164487551286e-05, 'vf_coef': 0.9267394440000852, 'max_grad_norm': 0.5435185678776633, 'n_epochs': 4}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 025] fitness=+81.531  xte=11.21m  yaw=9.58°  smooth=0.45  shield=0.00%  (30.6s)
+[32m[I 2026-05-22 13:43:53,716][0m Trial 25 finished with value: 81.53105962177614 and parameters: {'w_xte': 2.5691877969398105, 'w_heading': 5.4505025558084155, 'w_speed': 0.17285860453892407, 'w_smooth': 1.0836118566787598, 'w_rate': 4.953373102229088, 'w_shield_hint': 0.27787143303935136, 'hydro_sigma': 0.028530399019246686, 'obs_noise_pos': 0.47041791848246456, 'lr': 2.2786266415284854e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.996135615554995, 'gae_lambda': 0.968212629635615, 'clip_range': 0.1914524038156805, 'ent_coef': 2.769817795484382e-06, 'vf_coef': 0.8799099679525337, 'max_grad_norm': 0.6958616525911006, 'n_epochs': 7}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 026] fitness=+70.164  xte=11.00m  yaw=9.66°  smooth=2.73  shield=0.67%  (29.7s)
+[32m[I 2026-05-22 13:44:23,512][0m Trial 26 finished with value: 70.16398192778072 and parameters: {'w_xte': 1.8513912241359243, 'w_heading': 2.647037851323361, 'w_speed': 0.06374662876984223, 'w_smooth': 0.6520128901459623, 'w_rate': 1.6707679418736934, 'w_shield_hint': 0.4093895643049137, 'hydro_sigma': 0.06865832587264867, 'obs_noise_pos': 0.6229917345615401, 'lr': 3.93468942463453e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9781399476468884, 'gae_lambda': 0.9546029184984327, 'clip_range': 0.24772479439645265, 'ent_coef': 4.443404438318185e-05, 'vf_coef': 0.9582798001303271, 'max_grad_norm': 0.6446690919892468, 'n_epochs': 6}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 027] fitness=+79.086  xte=11.37m  yaw=9.63°  smooth=0.90  shield=0.00%  (28.6s)
+[32m[I 2026-05-22 13:44:52,469][0m Trial 27 finished with value: 79.08608930775705 and parameters: {'w_xte': 1.1389119587920495, 'w_heading': 3.835995146107628, 'w_speed': 0.08335748612021697, 'w_smooth': 0.10669839586930283, 'w_rate': 2.6482849198496634, 'w_shield_hint': 0.5030760088256147, 'hydro_sigma': 0.03929978172766278, 'obs_noise_pos': 0.18915971466836, 'lr': 5.624769194515135e-05, 'n_steps': 512, 'batch_size': 128, 'gamma': 0.9867537315490548, 'gae_lambda': 0.9809851858030072, 'clip_range': 0.13158962983958722, 'ent_coef': 4.3383850868052845e-06, 'vf_coef': 0.7793203492224422, 'max_grad_norm': 0.6266878777887844, 'n_epochs': 5}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 028] fitness=+81.589  xte=11.25m  yaw=9.47°  smooth=0.44  shield=0.00%  (24.8s)
+[32m[I 2026-05-22 13:45:17,470][0m Trial 28 finished with value: 81.58924704755353 and parameters: {'w_xte': 0.7824579782079976, 'w_heading': 5.31235432472556, 'w_speed': 0.11267449699152234, 'w_smooth': 0.37541786267431143, 'w_rate': 3.3551746617811795, 'w_shield_hint': 0.2732456291436205, 'hydro_sigma': 0.06188740450808572, 'obs_noise_pos': 0.41603646213719553, 'lr': 7.103602891466083e-05, 'n_steps': 512, 'batch_size': 256, 'gamma': 0.9937097283082194, 'gae_lambda': 0.9397829887593622, 'clip_range': 0.26414574703717614, 'ent_coef': 1.8589207366288584e-06, 'vf_coef': 0.9827540338693457, 'max_grad_norm': 0.3121571054455279, 'n_epochs': 3}. Best is trial 15 with value: 82.7155136042661.[0m
+[trial 029] fitness=+65.659  xte=10.97m  yaw=9.17°  smooth=3.69  shield=0.60%  (27.0s)
+[32m[I 2026-05-22 13:45:44,595][0m Trial 29 finished with value: 65.6594021389768 and parameters: {'w_xte': 1.2527756713009643, 'w_heading': 7.46432349704149, 'w_speed': 0.15538460476977486, 'w_smooth': 0.9905575254177291, 'w_rate': 1.085005862221261, 'w_shield_hint': 0.11105121041999677, 'hydro_sigma': 0.027058664398124835, 'obs_noise_pos': 0.49415643604995363, 'lr': 9.024189317376723e-05, 'n_steps': 1024, 'batch_size': 128, 'gamma': 0.9584841680845457, 'gae_lambda': 0.9703238407879331, 'clip_range': 0.2048521779645079, 'ent_coef': 8.709250874271045e-05, 'vf_coef': 0.8773236258204421, 'max_grad_norm': 0.7171186669032323, 'n_epochs': 4}. Best is trial 15 with value: 82.7155136042661.[0m
+
+[best] trial #15  fitness=82.716
+                  w_xte = 1.8757242606710938
+              w_heading = 3.5926161422749336
+                w_speed = 0.09805735135150942
+               w_smooth = 0.23114017790053898
+                 w_rate = 4.964477902723519
+          w_shield_hint = 0.35072145495747864
+            hydro_sigma = 0.030596235800291388
+          obs_noise_pos = 0.31716316294732083
+                     lr = 4.437941647306535e-05
+                n_steps = 512
+             batch_size = 128
+                  gamma = 0.9929741810498209
+             gae_lambda = 0.9886447982112292
+             clip_range = 0.24005756664995892
+               ent_coef = 1.2359226135380003e-06
+                vf_coef = 0.9874026111787179
+          max_grad_norm = 0.5833848434539777
+               n_epochs = 5
+/workspace/src/ship_control/scripts/train_rl_optuna.py:212: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W0522 13:45:44.924000 6595 torch/onnx/_internal/exporter/_compat.py:133] Setting ONNX exporter to use operator set version 18 because the requested opset_version 17 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+W0522 13:45:45.303000 6595 torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::nms
+W0522 13:45:45.304000 6595 torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::roi_align
+W0522 13:45:45.304000 6595 torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::roi_pool
+[torch.onnx] Obtain model graph for `_DeterministicActorWrapper([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `_DeterministicActorWrapper([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decompositions...
+/usr/lib/python3.12/copyreg.py:99: FutureWarning: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+  return cls.__new__(cls, *args)
+[torch.onnx] Run decompositions... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 17).
+[torch.onnx] Optimize the ONNX graph...
+[torch.onnx] Optimize the ONNX graph... ✅
+[onnx] 导出策略到  /workspace/models/rl_policy_best.onnx  (1.9 KiB)
+[best] 元数据  → /workspace/models/rl_policy_best.json
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 20248 (\N{CJK UNIFIED IDEOGRAPH-4F18}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 21270 (\N{CJK UNIFIED IDEOGRAPH-5316}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 21069 (\N{CJK UNIFIED IDEOGRAPH-524D}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 21518 (\N{CJK UNIFIED IDEOGRAPH-540E}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 29702 (\N{CJK UNIFIED IDEOGRAPH-7406}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 25351 (\N{CJK UNIFIED IDEOGRAPH-6307}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 26631 (\N{CJK UNIFIED IDEOGRAPH-6807}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 23545 (\N{CJK UNIFIED IDEOGRAPH-5BF9}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 27604 (\N{CJK UNIFIED IDEOGRAPH-6BD4}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 65288 (\N{FULLWIDTH LEFT PARENTHESIS}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 36234 (\N{CJK UNIFIED IDEOGRAPH-8D8A}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 22806 (\N{CJK UNIFIED IDEOGRAPH-5916}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 22909 (\N{CJK UNIFIED IDEOGRAPH-597D}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:382: UserWarning: Glyph 65289 (\N{FULLWIDTH RIGHT PARENTHESIS}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 20248 (\N{CJK UNIFIED IDEOGRAPH-4F18}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 21270 (\N{CJK UNIFIED IDEOGRAPH-5316}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 21069 (\N{CJK UNIFIED IDEOGRAPH-524D}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 21518 (\N{CJK UNIFIED IDEOGRAPH-540E}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 29289 (\N{CJK UNIFIED IDEOGRAPH-7269}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 29702 (\N{CJK UNIFIED IDEOGRAPH-7406}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 25351 (\N{CJK UNIFIED IDEOGRAPH-6307}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 26631 (\N{CJK UNIFIED IDEOGRAPH-6807}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 23545 (\N{CJK UNIFIED IDEOGRAPH-5BF9}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 27604 (\N{CJK UNIFIED IDEOGRAPH-6BD4}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 65288 (\N{FULLWIDTH LEFT PARENTHESIS}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 36234 (\N{CJK UNIFIED IDEOGRAPH-8D8A}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 22806 (\N{CJK UNIFIED IDEOGRAPH-5916}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 22909 (\N{CJK UNIFIED IDEOGRAPH-597D}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:384: UserWarning: Glyph 65289 (\N{FULLWIDTH RIGHT PARENTHESIS}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+[viz] 雷达图  → /workspace/logs/radar_first_vs_best.png
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 39564 (\N{CJK UNIFIED IDEOGRAPH-9A8C}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 35777 (\N{CJK UNIFIED IDEOGRAPH-8BC1}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 21160 (\N{CJK UNIFIED IDEOGRAPH-52A8}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 20316 (\N{CJK UNIFIED IDEOGRAPH-4F5C}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 23545 (\N{CJK UNIFIED IDEOGRAPH-5BF9}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 27604 (\N{CJK UNIFIED IDEOGRAPH-6BD4}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 65306 (\N{FULLWIDTH COLON}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 21407 (\N{CJK UNIFIED IDEOGRAPH-539F}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 36755 (\N{CJK UNIFIED IDEOGRAPH-8F93}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 20986 (\N{CJK UNIFIED IDEOGRAPH-51FA}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 20223 (\N{CJK UNIFIED IDEOGRAPH-4EFF}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 30495 (\N{CJK UNIFIED IDEOGRAPH-771F}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 25252 (\N{CJK UNIFIED IDEOGRAPH-62A4}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 30462 (\N{CJK UNIFIED IDEOGRAPH-76FE}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 20462 (\N{CJK UNIFIED IDEOGRAPH-4FEE}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 27491 (\N{CJK UNIFIED IDEOGRAPH-6B63}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:420: UserWarning: Glyph 21518 (\N{CJK UNIFIED IDEOGRAPH-540E}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 39564 (\N{CJK UNIFIED IDEOGRAPH-9A8C}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 35777 (\N{CJK UNIFIED IDEOGRAPH-8BC1}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 38598 (\N{CJK UNIFIED IDEOGRAPH-96C6}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 21160 (\N{CJK UNIFIED IDEOGRAPH-52A8}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 20316 (\N{CJK UNIFIED IDEOGRAPH-4F5C}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 23545 (\N{CJK UNIFIED IDEOGRAPH-5BF9}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 27604 (\N{CJK UNIFIED IDEOGRAPH-6BD4}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 65306 (\N{FULLWIDTH COLON}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 21407 (\N{CJK UNIFIED IDEOGRAPH-539F}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 36755 (\N{CJK UNIFIED IDEOGRAPH-8F93}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 20986 (\N{CJK UNIFIED IDEOGRAPH-51FA}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 20223 (\N{CJK UNIFIED IDEOGRAPH-4EFF}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 30495 (\N{CJK UNIFIED IDEOGRAPH-771F}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 25252 (\N{CJK UNIFIED IDEOGRAPH-62A4}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 30462 (\N{CJK UNIFIED IDEOGRAPH-76FE}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 20462 (\N{CJK UNIFIED IDEOGRAPH-4FEE}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 27491 (\N{CJK UNIFIED IDEOGRAPH-6B63}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+/workspace/src/ship_control/scripts/train_rl_optuna.py:422: UserWarning: Glyph 21518 (\N{CJK UNIFIED IDEOGRAPH-540E}) missing from font(s) DejaVu Sans.
+  fig.savefig(png_path, dpi=140)
+[viz] 动作对比折线图 → /workspace/logs/action_overlay_best.png
+
+[done] all artefacts under: /workspace/models  &  /workspace/logs
