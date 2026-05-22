@@ -1,0 +1,39 @@
+{
+  "best_trial": 15,
+  "fitness": 82.7155136042661,
+  "params": {
+    "w_xte": 1.8757242606710938,
+    "w_heading": 3.5926161422749336,
+    "w_speed": 0.09805735135150942,
+    "w_smooth": 0.23114017790053898,
+    "w_rate": 4.964477902723519,
+    "w_shield_hint": 0.35072145495747864,
+    "hydro_sigma": 0.030596235800291388,
+    "obs_noise_pos": 0.31716316294732083,
+    "lr": 4.437941647306535e-05,
+    "n_steps": 512,
+    "batch_size": 128,
+    "gamma": 0.9929741810498209,
+    "gae_lambda": 0.9886447982112292,
+    "clip_range": 0.24005756664995892,
+    "ent_coef": 1.2359226135380003e-06,
+    "vf_coef": 0.9874026111787179,
+    "max_grad_norm": 0.5833848434539777,
+    "n_epochs": 5
+  },
+  "metrics": {
+    "xte_mean": 11.17179955905392,
+    "heading_err_mean": 0.1662783495527316,
+    "smoothness_penalty": 0.22486727001960388,
+    "shield_rate": 0.0
+  },
+  "onnx_path": "/workspace/models/rl_policy_best.onnx",
+  "state_dim": 13,
+  "action_dim": 4,
+  "action_scale": [
+    60000.0,
+    1.5707963705062866,
+    60000.0,
+    1.5707963705062866
+  ]
+}
